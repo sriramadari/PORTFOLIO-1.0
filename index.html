@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sriram Adari Portfolio</title>
+    <style>  
+     * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #393e46;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav,footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #222831;
+      }
+
+      footer nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      header nav ul {
+        display: flex;
+        justify-content: center;
+      }
+     header nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      footer nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      footer nav ul li a {
+        text-decoration: none;
+        color: #e55807;
+        font-size: 1rem;
+      }
+     header nav ul li a {
+        text-decoration: none;
+        color: #e55807;
+        font-size: 1rem;
+      }
+      nav ul li:hover {
+        font-size: 1.1rem;
+      }
+      main hr {
+        border: 0;
+        background: #e55807;
+        height: 1.2px;
+        margin: 20px 84px;
+      }
+      .left {
+        display: flex;
+        font-size: 1.5rem;
+      }
+      .left img {
+        height: 34px;
+        width: 34px;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 34px 0;
+      }
+      .firstSection > div {
+        width: 50%;
+      }
+      .leftsection {
+        font-size: 3rem;
+        margin: 60px 0;
+        margin-left: 130px;
+      }
+      .rightsection img {
+        width: 100%;
+      }
+      .purple,
+      #element,.skills {
+        color: #e55807;
+      }
+      .skill{
+        margin-left: 80px;
+      }
+      .about{
+        max-width: 80vw;
+        margin:auto;
+        margin-top: 0px;
+        height: 50vh;
+      }
+      .about h1{
+        font-size: 1.9rem;
+      }
+     .about h2{
+        margin-top: 30px;
+        font-size: 1.9rem;
+     }
+   
+      .line{
+        background: white;
+    width: 82vw;
+    height: 2px;
+    margin: 8px 0;
+    margin-bottom: 31px;
+    display: flex;
+      }
+    .skill-cards-container {
+    padding: 10px 0px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    margin-top: -11px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skill-cards-container .div-card .div-card-item span {
+    position: relative;
+    display: table;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+.skill-cards-container .div-card .mongodb {
+    background-image: url(assests/img/pngwing.com\ \(7\).png);
+}
+.skill-cards-container .div-card .react-js {
+    background-image: url(assests/img/pngwing.com\ \(3\).png);
+}
+.skill-cards-container .div-card .node-js {
+    background-image: url(assests/img/pngwing.com\ \(9\).png);
+}
+.skill-cards-container .div-card .express-js {
+    background-image: url(assests/img/pngwing.com\ \(10\).png);
+}
+.skill-cards-container .div-card .js {
+    background-image: url(assests/img/pngwing.com\ \(13\).png);
+}
+.skill-cards-container .div-card .python {
+    background-image: url(assests/img/pngwing.com\ \(2\).png);
+}
+.skill-cards-container .div-card .html {
+    background-image: url(assests/img/pngwing.com\ \(8\).png);
+}
+.skill-cards-container .div-card .ml{
+    background-image: url(assests/img/pngegg.png);
+}
+.skill-cards-container .div-card .css {
+    background-image: url(assests/img/pngwing.com\ \(11\).png);
+}
+.skill-cards-container .div-card .c{
+    background-image: url(assests/img/pngwing.com\ \(12\).png);
+}
+.skill-cards-container .div-card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+}
+.skill-cards-container .div-card-item {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    top: 60%;
+    left: 36%;
+    background: snow;
+    background-position: center;
+    transform: translateX(-50%) translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+      .secondsection,.thirdsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 55vh;
+      }
+      .text-white {
+        color: #9db2bf;
+      }
+     
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .secondsection .box ,.box-1{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 90px;
+        width: 1px;
+        background: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 44px;
+        position: relative;
+        top: -41px;
+        left: -20px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 47px;
+        color: white;
+        width: 150px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        left: -4px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 50px;
+        color: #9db2bf;
+        width: 150px;
+        font-size: 9px;
+        left: -4px;
+      }
+      .thirdsection h1 {
+        font-size: 1.9rem;
+      }
+      .thirdsection .box ,.box-1{
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .thirdsection .vertical {
+        height: 90px;
+        width: 1px;
+        background: white;
+        margin: 0 100px;
+      }
+      .edu{
+        margin-left: 20px;
+        margin-top: 37px;
+      }
+     footer .lef{
+        margin-left:60px;
+     }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <p><span class="purple">ADARI </span> LAKSHMI SRIRAM</p>
+          <img src="assests/img/icons8-developer-mode-50 (1).png" alt="" />
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a onclick='toAbout()'>About</a></li>
+            <li><a href="https://github.com/sriramadari?tab=repositories">Projects</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftsection">
+          Hi, My Name is
+          <div><span class="purple">Sriram Adari</span></div>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="assests/img/developer.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      
+     
+      <section class="secondsection">
+        <span class="text-white">What I have done so far</span>
+        <h1>Certifications</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="assests/img/pngwing.com.png" alt="" />
+            <div class="vertical-title">
+              COMPLETE WEB DEVLOPMENT BOOTCAMP 2023
+            </div>
+            <div class="vertical-desc">
+              Udemy course by Dr.Angela YU which includes MERN stack web
+              development , WEB3 technology.
+            </div>
+          </div>
+          
+          <div class="vertical">
+            <img class="image-top" src="assests/img/pngwing.com (2).png" alt="" />
+            <div class="vertical-title">
+                Python fundamentals, Basics & intermediate. 
+            </div>
+            <div class="vertical-desc">
+             A basic certification on python fundamentals from solo-learn academy. 
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="assests/img/pngwing.com (1).png" alt="" />
+            <div class="vertical-title">
+                Supervised Machine Learning: Regression and Classification
+            </div>
+            <div class="vertical-desc">
+             Coursera course by Deeplearning.AI which gave me strong knowledge on machine learning fundamentals.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="assests/img/pngwing.com (3).png" alt="" />
+            <div class="vertical-title">
+            Certifications so far....
+        </div></div>
+        </div>
+    </section>
+    <section class="thirdsection">
+        <h1>Projects</h1>
+        <div class="box">
+            
+            <div class="vertical">
+              <img class="image-top" src="assests/img/pngwing.com (4).png" alt="" />
+              <div class="vertical-title">
+               GITHUB Profile Viewer web application
+              </div>
+              <div class="vertical-desc">
+                An API based React-js web application ,It uses octokit github API and gives response as search for any github profile.
+              </div>
+            </div>
+            
+            <div class="vertical">
+              <img class="image-top" src="assests/img/pngwing.com (5).png" alt="" />
+              <div class="vertical-title">
+                  Daily Journaling web application 
+              </div>
+              <div class="vertical-desc">
+                A small Dynamic webpage that is used to write down daily activites made using Node.js,express js ,Embeded javascript(EJS)
+              </div>
+            </div>
+            <div class="vertical">
+              <img class="image-top" src="assests/img/pngwing.com (6).png" alt="" />
+              <div class="vertical-title">
+                  Heart Disease Prediction ML project
+              </div>
+              <div class="vertical-desc">
+              Made a Heart Disease prediciton model using logistic regression.
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+            <h1>About me</h1><div class="line"></div>
+            <div class="l">Hi there! I am an enthusiastic and friendly learner in the world of computer science. I'm always excited to discover new things and expand my knowledge. I'm pretty disciplined too, as I stay focused on my learning journey. One thing you'll notice about me is that I'm not afraid to try different things. I'm like an adventurous explorer, eager to see what's out there.
+                
+            </div>
+            <div class="edu"><ul>
+                <li>Btech in CSE - Vignan's instiute of information technology(2021-2025)</li>
+                <li>Intermediate - srichaitanya junior college(2018-2020)</li>
+                <li>School - Narayana english medium high school(2017-2018)</li>
+            </ul></div>
+        </section>
+        <section class="skill">
+                <h2>Programming Skills</h2><div class="line"></div>
+                <div class="skill-cards-container">
+                    <div class="div-card">
+                      <div class="div-card-item mongodb" title="Level : Advanced Beginner"> <span>MongoDB</span></div>
+                     
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item express-js" title="Level : Proficient"><span>Express.js</span></div>
+                      
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item react-js" title="Level : Proficient"><span>React</span></div>
+                      
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item node-js" title="Level : Proficient"> <span>Node.js</span></div>
+                     
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item js" title="Level : Proficient"> <span>JavaScript</span></div>
+                     
+                    </div>
+                    
+                   
+                    <div class="div-card">
+                      <div class="div-card-item c" title="Level : Advanced Beginner"><span>C++</span></div>
+                      
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item html" title="Level : Expert"> <span>HTML</span></div>
+                     
+                    </div>
+                    <div class="div-card">
+                      <div class="div-card-item css" title="Level : Expert"> <span>CSS</span></div>
+                     
+                    </div>
+                    <div class="div-card">
+                        <div class="div-card-item python" title="Level : Proficient"> <span>Python</span></div>
+                       
+                      </div>
+                    <div class="div-card">
+                        <div class="div-card-item ml" title="Level : Expert"> <span>Machine Learning</span></div>
+                       
+                      </div>
+                  </div>
+               
+                </div> 
+          </section>
+         
+    </main>
+
+    <footer>
+        <nav>
+            <div class="lef">
+              <p>Copyrights sriramadari 2023</p>
+            </div>
+            <div class="right">
+              <ul>
+                <li><a href="https://github.com/sriramadari?tab=repositories">Github</a></li>
+                <li><a href="https://www.instagram.com/sriramadari/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/sriram-adari-577649242/">linkedin</a></li>
+              </ul>
+            </div>
+          </nav>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web developer.", "ML Engineer.", "Opensource-contributer."],
+        typeSpeed: 50,
+      });
+    
+    </script>
+  </body>
+</html>
